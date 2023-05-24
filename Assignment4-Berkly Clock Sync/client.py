@@ -16,8 +16,7 @@ def startSendingTime(slave_client):
         slave_client.send(str(
             datetime.datetime.now()).encode())
 
-        print("Recent time sent successfully",
-              end="\n\n")
+        print("Recent time sent successfully")
         time.sleep(5)
 
 
@@ -30,8 +29,7 @@ def startReceivingTime(slave_client):
             slave_client.recv(1024).decode())
 
         print("Synchronized time at the client is: " +
-              str(Synchronized_time),
-              end="\n\n")
+              str(Synchronized_time))
 
 
 # function used to Synchronize client process time

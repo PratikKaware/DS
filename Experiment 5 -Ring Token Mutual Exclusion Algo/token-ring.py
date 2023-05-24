@@ -23,9 +23,9 @@ class TokenRingMutex:
 
 def worker(mutex, id):
     while True:
-        print(f"Worker {id} is outside the critical section")
+        print("Worker" +str(id)+" is outside the critical section")
         mutex.request_critical_section()
-        print(f"Worker {id} is inside the critical section")
+        print("Worker" +str(id)+" is inside the critical section")
         time.sleep(1)
         mutex.release_critical_section()
 

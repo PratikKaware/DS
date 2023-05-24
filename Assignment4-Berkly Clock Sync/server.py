@@ -31,8 +31,7 @@ def startReceivingClockTime(connector, address):
             "connector": connector
         }
 
-        print("Client Data updated with: " + str(address),
-              end="\n\n")
+        print("Client Data updated with: " + str(address))
         time.sleep(5)
 
 
